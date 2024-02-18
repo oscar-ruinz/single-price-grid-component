@@ -1,0 +1,188 @@
+:root{
+/* ## Colors
+
+## Primary */
+--Cyan: #4ABEBD;
+--Dark-Cyan: #2BB3B1;
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Bright-Yellow-hover: hsl(71, 56%, 42%);
+
+/* ### Neutral */
+--White: hsl(0,0%,100%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light-Gray);
+    overflow: hidden;
+}
+.container{
+    background-color:var(--White);
+    width: 360px;
+    height: 810px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.24);
+}
+.community{
+    height: 290px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 10px 10px 0px 0px;
+}
+.community h2, .community span, .community p{
+    width: 90%;
+    padding-left: 5%;
+}
+.community h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: var(--Cyan);
+    font-weight: 700;
+}
+.community span{
+    color: var(--Bright-Yellow);
+    font-weight: 700;
+}   
+.community p{
+    margin-top: 30px;
+    line-height: 1.7;
+    color: var(--Grayish-Blue);
+}
+.subscription{
+    border: 1px solid rgba(0, 0, 0, 0);
+    height: 260px;
+    background-color: var(--Dark-Cyan);
+    color: var(--White);
+}
+.subscription h3, .subscription p{
+    width: 90%;
+    padding-left: 5%;
+}
+.subscription h3{
+    margin-top: 30px;
+}
+
+.subscription p.price{
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.price span{
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.5;
+    margin-left: 10px;
+}
+
+.subscription p{
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.subscription button{
+    width: 90%;
+    margin-left: 5%;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--Bright-Yellow);
+    color: var(--White);
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0px 0px 20px 5px #2ca09ea8;
+    transition: ease 0.5s;
+}
+.subscription button:hover{
+    background-color: var(--Bright-Yellow-hover);
+    cursor: pointer;
+}
+
+.why-us{
+    border: 1px solid rgba(0, 0, 0, 0);
+    height: 260px;
+    background-color: var(--Cyan);
+    border-radius: 0px 0px 10px 10px;
+}
+.why-us h3, .why-us ul{
+    width: 90%;
+    padding-left: 5%;
+}
+.why-us h3{
+    margin-top: 30px;
+    color: var(--White);
+    font-weight: 500;
+}
+.why-us ul{
+    line-height: 1.5;
+}
+.why-us li{
+    color: var(--White);
+    opacity: 0.5;
+    font-weight: 300;
+    list-style-type: none;
+}
+
+@media (min-width:850px){
+    .container{
+        width: 700px;
+        height: 550px;
+
+    }
+    .community{
+        height: 250px;
+        width: 100%;
+    }
+    .community h2{
+        font-size: 1.7rem;
+    }
+    .community span{
+        font-size: 1.2rem;
+    }   
+    .community p{
+        margin-top: 30px;
+        line-height: 1.7;
+        color: var(--Grayish-Blue);
+    }
+    .subscription{
+        height: 300px;
+        width: 348px;
+        float: left;
+        border-radius: 0px 0px 0px 10px;
+    }
+    .subscription h3{
+        margin-top: 50px;
+    }
+    .subscription h3, .subscription p{
+        padding-left: 10%;
+    }
+    .subscription button{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 20px;
+    }
+    
+    .why-us{
+        height: 300px;
+        width: 348px;
+        float: right;
+        border-radius: 0px 0px 10px 0px;
+    }
+    .why-us h3, .why-us ul{
+        padding-left: 10%;
+    }
+    .why-us h3{
+        margin-top: 50px;
+    }
+}
